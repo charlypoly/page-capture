@@ -1,0 +1,21 @@
+{
+  "name": "page-capture",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Capture a screenshot and metadata for any URL.",
+  "scripts": {
+    "capture": "tsx src/cli.ts",
+    "typecheck": "tsc --noEmit",
+    "postinstall": "playwright install chromium"
+  },
+  "dependencies": {
+    "playwright": "^1.65.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "@vercel/node": "^31",
+    "tsx": "^4.23.0",
+    "typescript": "^5.9"
+  }
+}
